@@ -1,0 +1,6 @@
+#include <exception>
+class cantFindMarkException: std::exception{
+  virtual const char* what() const noexcept{
+    return "can't find the parsing mark!";
+  }
+};
